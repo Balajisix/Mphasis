@@ -1,9 +1,14 @@
 from langchain_huggingface import HuggingFaceEndpoint, ChatHuggingFace
 from langchain_core.messages import HumanMessage, AIMessage
 import streamlit as st
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 model_id = "openai/gpt-oss-120b"
-access_token = "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"
+access_token = os.getenv("HF_TOKEN")
+print(access_token)
 
 llm_endpoint  = HuggingFaceEndpoint(
     repo_id=model_id,

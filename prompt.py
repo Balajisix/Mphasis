@@ -1,8 +1,12 @@
+import os
+from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 
+load_dotenv()
+
 model_id = "openai/gpt-oss-120b"
-access_token = "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"
+access_token = os.getenv("HF_TOKEN")
 
 # it's like a engine we communicate
 llm_endpoint  = HuggingFaceEndpoint(
