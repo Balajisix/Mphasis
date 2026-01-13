@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-model_id = "openai/gpt-oss-120b"
+model_id = os.getenv("HF_MODEL")
 access_token = os.getenv("HF_TOKEN")
 print(access_token)
 

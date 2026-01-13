@@ -5,7 +5,7 @@ from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 
 load_dotenv()
 
-model_id = "openai/gpt-oss-120b"
+model_id = os.getenv("HF_MODEL")
 access_token = os.getenv("HF_TOKEN")
 
 # it's like a engine we communicate
