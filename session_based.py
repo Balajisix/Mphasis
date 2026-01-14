@@ -39,7 +39,7 @@ with_message_history = RunnableWithMessageHistory(
     get_session_history,
 )
 
-st.title("Generative AI Class")
+st.title("Generative AI")
 
 st.markdown("**Session controls**")
 st.text_input("Enter session id", key="session_id_input", help="Type a session id and click Use Session")
