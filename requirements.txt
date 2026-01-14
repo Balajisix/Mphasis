@@ -6,3 +6,5 @@ langchain-core
 langchain-community
 langchain-openai
 langchain-huggingface
+transformers
+guardrails-ai
