@@ -8,7 +8,6 @@ load_dotenv()
 
 model_id = os.getenv("HF_MODEL")
 access_token = os.getenv("HF_TOKEN")
-print(access_token)
 
 llm_endpoint  = HuggingFaceEndpoint(
     repo_id=model_id,
